@@ -55,7 +55,7 @@
 }
 
 .comment-card.approved {
-  border-left: 3px solid var(--accent-2);
+  border-left: 3px solid var(--accent);
 }
 
 .comment-card.posted {
@@ -116,7 +116,7 @@
 }
 
 .status-pill.pending { background: var(--warm-glow); color: var(--warm); }
-.status-pill.approved { background: var(--accent-glow); color: var(--accent-2); }
+.status-pill.approved { background: var(--accent-glow); color: var(--accent); }
 .status-pill.posted { background: var(--green-glow); color: var(--green); }
 .status-pill.rejected { background: rgba(255,107,107,0.1); color: var(--coral); }
 

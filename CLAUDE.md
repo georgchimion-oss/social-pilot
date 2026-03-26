@@ -9,11 +9,12 @@ AI-powered automated commenting for LinkedIn and Twitter
 - **Repo**: georgchimion-oss/social-pilot (public)
 
 ## Design System
-- Dark theme (#08080A bg, #1C1C23 surface)
+- Uses georg.miami shared design system (`georg-design-system.css`)
+- Dark theme (#0B0B0F bg, #14141A surface)
 - Fonts: Space Grotesk (headings), DM Sans (body), JetBrains Mono (code)
-- Colors: #F0845C (warm/CTA), #00D2C8 (teal), #10B981 (green), #6366F1 (accent)
+- Single accent: #06B6D4 (teal/cyan). Old multi-color palette was deprecated March 2026.
 
 ## Conventions
 - React + TypeScript with Vite
-- Git: local master, push to remote main (`git push origin HEAD:main`)
+- See master `Coding/.claude/CLAUDE.md` for shared conventions (git workflow, deploy commands)
 - Keep ROADMAP.md updated

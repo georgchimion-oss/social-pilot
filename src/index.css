@@ -3,27 +3,42 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #08080A;
-  --bg-2: #0F0F12;
-  --bg-3: #16161B;
-  --surface: #1C1C23;
-  --border: rgba(255,255,255,0.07);
-  --border-hover: rgba(255,255,255,0.14);
-  --text: #EAEAEF;
-  --text-2: rgba(255,255,255,0.52);
-  --text-3: rgba(255,255,255,0.30);
-  --accent: #6366F1;
-  --accent-2: #818CF8;
-  --accent-glow: rgba(99,102,241,0.12);
-  --warm: #F0845C;
-  --warm-2: #F7A87C;
-  --warm-glow: rgba(240,132,92,0.10);
-  --coral: #FF6B6B;
-  --teal: #00D2C8;
-  --teal-glow: rgba(0,210,200,0.10);
-  --green: #10B981;
-  --green-glow: rgba(16,185,129,0.10);
-  --orange: #F59E0B;
+  /* Miami Night — deep ocean darks */
+  --bg: #060911;
+  --bg-2: #0B1120;
+  --bg-3: #111B2E;
+  --surface: #152038;
+  --border: rgba(255,255,255,0.08);
+  --border-hover: rgba(255,255,255,0.16);
+  --text: #F0F2F8;
+  --text-2: rgba(255,255,255,0.55);
+  --text-3: rgba(255,255,255,0.32);
+
+  /* Primary — electric blue-purple (PowerIn-inspired) */
+  --accent: #4F46E5;
+  --accent-2: #7C6EF6;
+  --accent-glow: rgba(79,70,229,0.15);
+  --gradient: linear-gradient(135deg, #4F46E5, #7C3AED, #C026D3);
+
+  /* Neon Miami pink — the hero color */
+  --warm: #F637CF;
+  --warm-2: #F76FDD;
+  --warm-glow: rgba(246,55,207,0.12);
+
+  /* Sunset coral */
+  --coral: #FF5F7E;
+
+  /* Tropical teal — ocean vibes */
+  --teal: #06D6A0;
+  --teal-glow: rgba(6,214,160,0.12);
+
+  /* Lime — PowerIn nod */
+  --green: #BFFF00;
+  --green-glow: rgba(191,255,0,0.10);
+
+  /* Golden hour */
+  --orange: #FFB347;
+
   --r: 14px;
   --r-sm: 8px;
 
@@ -57,7 +72,7 @@ body::before {
 }
 
 a { color: var(--accent-2); text-decoration: none; transition: color 0.2s; }
-a:hover { color: #a5b4fc; }
+a:hover { color: var(--warm); }
 
 h1, h2, h3 {
   font-family: 'Space Grotesk', sans-serif;
@@ -81,11 +96,11 @@ code {
 
 .btn-primary {
   display: inline-flex; align-items: center; gap: 8px;
-  padding: 13px 26px; background: var(--warm); color: #0A0A0B; font-size: 14px; font-weight: 600;
+  padding: 13px 26px; background: var(--gradient); color: #fff; font-size: 14px; font-weight: 600;
   border-radius: var(--r-sm); border: none; cursor: pointer; transition: all 0.2s;
   font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.01em;
 }
-.btn-primary:hover { background: var(--warm-2); transform: translateY(-1px); box-shadow: 0 4px 24px rgba(212,149,106,0.25); }
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 4px 24px rgba(79,70,229,0.35); }
 
 .btn-secondary {
   display: inline-flex; align-items: center; gap: 8px;

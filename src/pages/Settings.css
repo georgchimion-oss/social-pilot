@@ -132,7 +132,7 @@
 }
 
 .toggle input:checked + .toggle-slider {
-  background: var(--accent);
+  background: var(--gradient);
 }
 
 .toggle input:checked + .toggle-slider::before {
